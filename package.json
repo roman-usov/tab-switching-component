@@ -2,24 +2,20 @@
   "name": "tab-switching-component",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
-  "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --colors"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
+    "test": "npx playwright test"
   },
   "dependencies": {
     "on-change": "*"
   },
   "devDependencies": {
-    "parcel": "^2.9.3",
-    "prettier": "2.8.8",
+    "@playwright/test": "^1.36.2",
     "@vitejs/plugin-react": "*",
-    "@playwright/test": "*"
+    "parcel": "^2.9.3",
+    "prettier": "2.8.8"
   },
   "author": "",
   "license": "ISC"

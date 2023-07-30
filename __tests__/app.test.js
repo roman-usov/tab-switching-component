@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('main-content-list', async ({ page }) => {
-  await page.goto('http://localhost:8080/');
+  await page.goto('http://localhost:57905');
 
   await page.locator('#list-python-list').click();
   await expect(page.getByTestId('list-python')).toHaveClass('card-body tab-pane fade active show');
@@ -38,7 +38,7 @@ test('main-content-list', async ({ page }) => {
 });
 
 test('secondary-content-list', async ({ page }) => {
-  await page.goto('http://localhost:8080/');
+  await page.goto('http://localhost:57905');
 
   await page.locator('#secondary-python-list').click();
   await expect(page.getByTestId('secondary-python')).toHaveClass('tab-pane fade active show');
